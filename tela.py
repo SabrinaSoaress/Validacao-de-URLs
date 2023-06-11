@@ -229,31 +229,31 @@ label_url = tk.Label(tela_url, text="URL:", background='pink', font=(20))
 label_url.pack(pady=30)
 
 entry_url = tk.Entry(tela_url, width=60, font=(20))
-entry_url.pack()
+entry_url.pack(pady=10)
 
 button_adicionar = tk.Button(tela_url, text="Validar e Adicionar", command=adicionar_url, bg='black', fg='pink', font=(12))
-button_adicionar.pack()
+button_adicionar.pack(pady=10)
 
 button_alterar = tk.Button(tela_url, text="Alterar", command=alterar_url, bg='black', fg='pink', font=(12))
-button_alterar.pack()
+button_alterar.pack(pady=10)
 
 button_excluir = tk.Button(tela_url, text="Excluir", command=excluir_url, bg='black', fg='pink', font=(12))
-button_excluir.pack()
+button_excluir.pack(pady=10)
 
 listbox_urls = tk.Listbox(tela_url, width=60, font=(20))
-listbox_urls.pack()
+listbox_urls.pack(pady=10)
 
 button_validar = tk.Button(tela_url, text="Validar URLs", command=validar_urls, bg='black', fg='pink', font=(12))
-button_validar.pack()
+button_validar.pack(side=tk.LEFT, pady=10)
 
 button_importar = tk.Button(tela_url, text="Importar", command=importar_urls, bg='black', fg='pink', font=(12))
-button_importar.pack()
+button_importar.pack(side=tk.LEFT, pady=10)
 
 button_detalhes = tk.Button(tela_url, text="Detalhes", command=exibir_detalhes, bg='black', fg='pink', font=(12))
-button_detalhes.pack()
+button_detalhes.pack(side=tk.LEFT, pady=10)
 
 button_historico = tk.Button(tela_url, text="Histórico de Validações", command=exibir_historico, bg='black', fg='pink', font=(12))
-button_historico.pack()
+button_historico.pack(side=tk.LEFT, pady=10)
 
 exibir_telaUrl()
 window.mainloop()
